@@ -27,7 +27,7 @@
     <!-- <h1>Første fil</h1> -->
 
     <!-- <header> er en semantisk beholder for toppinnhold som logo, tittel og hovednavigasjon. -->
-    <header>
+    <header id="global-header">
       <!-- <a> er en lenke (ankerelement).
            href="index.html" peker til startsiden. Lenketeksten "LOGO" fungerer som midlertidig logo. -->
       <a href="index.html" id="mainLogo">LOGO</a>
@@ -53,7 +53,7 @@
 
     <!-- <section> grupperer relatert innhold (hero/tilbud på forsiden).
          Semantikk hjelper skjermlesere og SEO å forstå struktur. -->
-    <section>
+    <section class="deal-section">
       <!-- <h2> er en seksjonsoverskrift (neste nivå under <h1>).
            Tips: Ha én <h1> per side øverst i hovedinnholdet for best struktur. -->
       <h2>Crazy Gaming Deals</h2>
@@ -62,7 +62,7 @@
            src angir bildekilde (her placeholder-tjeneste).
            alt bør beskrive bildet for skjermlesere (tom alt betyr dekorativt bilde).
            Tips: Bruk beskrivende alt, f.eks. alt="Gråtonet spillkampanjebanner". -->
-      <img src="https://picsum.photos/200/300?grayscale" alt="" />
+      <!--<img src="https://picsum.photos/700/500?grayscale" alt="" />-->
 
       <!-- <p> avsnitt med beskrivende tekst. -->
       <p>
@@ -72,7 +72,7 @@
 
       <!-- Primær handling (CTA) som leder til tilbudsside.
            href="offers.html" peker til egen side med kampanjer. -->
-      <a href="offers.html">Se tilbud</a>
+      <a href="offers.html"class="btn">Se tilbud</a>
     </section>
 
     <!-- <main> markerer hovedinnholdet på siden.
@@ -169,7 +169,7 @@
 
     <!-- <aside> for supplerende/sekundært innhold (f.eks. nyhetsbrev/klubbinnmelding).
          Skjermlesere forstår dette som sidestolpe/tillegg. -->
-    <aside>
+    <aside class="side-container">
       <!-- Tittel for aside-innhold. -->
       <h4>Meld deg inn i spællklubben</h4>
 
@@ -193,17 +193,18 @@
         <!-- Innsendingsknapp for skjemaet.
              type="submit" sender skjemaet når klikket.
              value angir knappens etikett. -->
-        <input type="submit" value="Mel meg på">
+        <input class="btn" type="submit" value="Mel meg på">
 
         <!-- Etikett knyttet til avkrysningsboks via for="age-validation" og id="age-validation".
              Dette gjør at klikk på teksten toggler boksen. -->
-        <label for="age-validation">Over 18</label>
-
+        <label class="age-check" for="age-validation">Over 18
         <!-- Avkrysningsboks (checkbox) for aldersbekreftelse.
              id matcher label-for.
              required gjør feltet obligatorisk før innsending. -->
         <input type="checkbox" id="age-validation" required>
+      </label>
       </form>
     </aside>
+    <footer>Webutvikling 2025</footer>
   </body>
 </html>
