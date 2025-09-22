@@ -44,6 +44,10 @@ body {
         }
     }
 }
+.fa-bars{
+    display: inline-block;
+
+}
 
 #mainLogo {
     font-size: 30PX;
@@ -205,6 +209,9 @@ footer{
         grid-column-end: 4;
     }
 
+    .fa-bars{
+        display: none;
+    }
     .deal-section{
         grid-column-end: 4;
     }
@@ -292,4 +299,9 @@ section.flex-grow{
 
 .grow-2{
     flex-grow: 3;
-}@/
+}@*/
+.fa-bars{
+font-size: 30px;
+color: #6a0404;
+font-weight: 600;
+}
