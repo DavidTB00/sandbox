@@ -210,7 +210,7 @@ footer{
     }
 
     .fa-bars{
-        display: none;
+        display: flex;
     }
     .deal-section{
         grid-column-end: 4;
